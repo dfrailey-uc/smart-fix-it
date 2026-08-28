@@ -1,0 +1,70 @@
+{
+  "campus": "UC San Diego",
+  "areas": [
+    {
+      "id": "area-res",
+      "name": "Residential Communities",
+      "buildings": [
+        {
+          "id": "bldg-mesa",
+          "name": "Mesa Nueva",
+          "type": "Residential",
+          "units": ["Unit A", "Unit B", "Unit C"]
+        },
+        {
+          "id": "bldg-warren",
+          "name": "Warren College Housing",
+          "type": "Residential",
+          "units": ["Room 101", "Room 102"]
+        }
+      ]
+    },
+    {
+      "id": "area-acad",
+      "name": "Academic & Research",
+      "buildings": [
+        {
+          "id": "bldg-geisel",
+          "name": "Geisel Library",
+          "type": "Academic/Research",
+          "floors": [
+            { "level": 1, "rooms": ["Lobby", "Study Area A"] },
+            { "level": 2, "rooms": ["Stacks", "Reading Room"] }
+          ]
+        },
+        {
+          "id": "bldg-cse",
+          "name": "CSE Building",
+          "type": "Academic/Research",
+          "floors": [
+            { "level": 1, "rooms": ["Lobby", "Lab 1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "area-pub",
+      "name": "Public & Common Spaces",
+      "buildings": [
+        {
+          "id": "bldg-price",
+          "name": "Price Center",
+          "type": "Public/Common Space",
+          "areas": ["Restrooms", "Food Court", "Student Union", "Hallway"]
+        }
+      ]
+    },
+    {
+      "id": "area-out",
+      "name": "Outdoor Space",
+      "landmarks": ["Jacobs Event Center", "Sun God Shale", "The Glade"]
+    }
+  ],
+  "aliases": {
+    "PC": "Price Center",
+    "Geisel": "Geisel Library",
+    "CSE": "CSE Building",
+    "Franklin": "Franklin Roosevelt Administration Building",
+    "FAH": "Faculty Academic Housing"
+  }
+}

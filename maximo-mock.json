@@ -1,0 +1,28 @@
+{
+  "locations": {
+    "bldg-price": "MAX-LOC-1001",
+    "bldg-geisel": "MAX-LOC-2002",
+    "bldg-cse": "MAX-LOC-3003",
+    "bldg-mesa": "MAX-LOC-4004"
+  },
+  "open_requests": [
+    {
+      "id": "SR-1001",
+      "location_id": "MAX-LOC-2002",
+      "room": "Stacks",
+      "problem": "Ceiling leak near window",
+      "status": "Open",
+      "date": "2026-08-27T10:00:00Z",
+      "description": "Water dripping from the ceiling tiles in the second floor stacks."
+    },
+    {
+      "id": "SR-1002",
+      "location_id": "MAX-LOC-1001",
+      "room": "Restrooms",
+      "problem": "Broken hand dryer",
+      "status": "In Progress",
+      "date": "2026-08-26T14:30:00Z",
+      "description": "Hand dryer in the main Price Center restroom is not powering on."
+    }
+  ]
+}
