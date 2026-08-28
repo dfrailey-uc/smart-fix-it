@@ -1,0 +1,105 @@
+{
+  "categories": {
+    "plumbing-sink-leak": {
+      "label": "Plumbing $\rightarrow$ Sink Leak",
+      "questions": [
+        {
+          "id": "q-leak-active",
+          "text": "Is water actively leaking right now?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": true,
+          "urgency_signal": true
+        },
+        {
+          "id": "q-leak-severity",
+          "text": "How severe is the leak?",
+          "type": "select",
+          "options": ["Dripping", "Steady Stream", "Flooding"],
+          "required": true,
+          "urgency_signal": true
+        },
+        {
+          "id": "q-leak-contained",
+          "text": "Can the leak be contained (e.g., with a bucket)?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": false
+        }
+      ]
+    },
+    "hvac-no-cooling": {
+      "label": "HVAC $\rightarrow$ No Cooling",
+      "questions": [
+        {
+          "id": "q-hvac-scope",
+          "text": "Is one room or multiple rooms affected?",
+          "type": "select",
+          "options": ["Single Room", "Multiple Rooms", "Whole Floor/Building"],
+          "required": true
+        },
+        {
+          "id": "q-hvac-airflow",
+          "text": "Is air coming from the vent?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": true
+        },
+        {
+          "id": "q-hvac-temp",
+          "text": "Is the room unusually hot?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": false
+        }
+      ]
+    },
+    "electrical-flicker": {
+      "label": "Electrical $\rightarrow$ Flickering Light",
+      "questions": [
+        {
+          "id": "q-elec-safety",
+          "text": "Are there any sparks, smoke, or a burning smell?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": true,
+          "safety_signal": true
+        },
+        {
+          "id": "q-elec-scope",
+          "text": "Is one fixture or several affected?",
+          "type": "select",
+          "options": ["Single Fixture", "Multiple Fixtures"],
+          "required": true
+        }
+      ]
+    },
+    "lock-malfunction": {
+      "label": "Locks $\rightarrow$ Electronic Lock Failure",
+      "questions": [
+        {
+          "id": "q-lock-secure",
+          "text": "Can the door be secured?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": true,
+          "urgency_signal": true
+        },
+        {
+          "id": "q-lock-damage",
+          "text": "Is the lock physically damaged?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": true
+        },
+        {
+          "id": "q-lock-reader",
+          "text": "Is the electronic reader responding (lights/beeps)?",
+          "type": "toggle",
+          "options": ["Yes", "No"],
+          "required": true
+        }
+      ]
+    }
+  }
+}
